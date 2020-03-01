@@ -1,0 +1,184 @@
+body {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  position: relative;
+  background-color: #2d303a;
+  padding-bottom: 73px;
+}
+.about-us {
+  background-color: #f2f2f2;
+}
+
+.pictures-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-left: 40px;
+}
+
+.portfolio-line {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 1020px;
+  border: none;
+  background-color: #323746;
+}
+
+.portfolio-title {
+  margin-bottom: 24px;
+}
+
+.about-us-title {
+  margin-bottom: 13px;
+}
+
+.portfolio-title, .about-us-title {
+  color: #666d89;
+  margin-left: 40px;
+  padding-top: 61px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.about-us-text {
+  line-height: 31px;
+  word-spacing: 1.2px;
+}
+
+.portfolio-text {
+  margin-bottom: 16px;
+}
+
+.about-us-text {
+  margin-bottom: 44px;
+}
+
+.portfolio-text, .about-us-text {
+  color: #4d5266;
+  margin-left: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.button-wrapper {
+  margin-left: 40px;
+  margin-bottom: 19px;
+}
+
+.button {
+  border: 1px solid #404454;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #545a6f;
+  margin-right: 7px;
+  padding: 3px 6px;
+}
+
+.button:nth-child(3) {
+  padding: 3px 5px;
+}
+
+.button:last-child {
+  padding: 3px 5px;
+}
+
+.button:hover {
+  border-color: #606268;
+  color: #808187;
+}
+
+hr, h2, figure {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+.persons {
+  display: flex;
+}
+
+.person1 {
+  margin-left: 40px;
+  margin-right: -22px;
+}
+
+.person2 {
+  margin-right: -12px;
+}
+
+.social-btn {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  text-decoration: none;
+  border: 1px solid #c3c6cf;
+  border-radius: 17px;
+  background: transparent url("./assets/img/sprite.png") no-repeat center;
+  margin-right: 2px;
+}
+
+.person-picture {
+  display: block;
+}
+
+.portfolio-picture, .person-picture {
+  background-color: #464b5e;
+}
+
+.social-btn-fc {
+  background-position: 2px 0;
+}
+
+.social-btn-goo {
+  background-position: -26px 0;
+}
+
+.social-btn-tw {
+  background-position: -64px -3px;
+}
+
+.social-btn-li {
+  background-position: -96px 0;
+}
+
+.social-btn:hover {
+  background-color: lightblue;
+}
+
+.social-btn {
+  margin-top: 10px;
+}
+
+.person-name {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.button, .about-person {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+} 
+
+.person-picture-description {
+  margin-top: 15px;
+  margin-bottom: -3px;
+}
+
+.about-person {
+  line-height: 22px;
+}
+

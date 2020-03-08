@@ -1,0 +1,105 @@
+body {
+  width: 1020px;
+  margin:  0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.contact {
+  background-color: #f06c64;
+  min-height: 654px;
+}
+
+.main-footer {
+  background-color: #2d303a;
+  min-height: 76px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-btn {
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  text-decoration: none;
+  border: 1px solid #c3c6cf;
+  border-radius: 17px;
+  background: transparent url("./assets/img/sprite.png") no-repeat center;
+  margin-right: 4px;
+}
+
+.social-buttons {
+  margin-top: 22px;
+  margin-right: 35px;
+}
+
+.copyright {
+  color: #434758;
+  margin-top: 31px;
+  margin-left: 42px;
+  font-size: 12px;
+}
+
+.social-btn-fc {
+  background-position: 2px 0;
+}
+
+.social-btn-goo {
+  background-position: -26px 0;
+}
+
+.social-btn-tw {
+  background-position: -64px -3px;
+}
+
+.social-btn-li {
+  background-position: -96px 0;
+}
+
+.input-text {
+  height: 38px;
+  width: 619px;
+  background-color: #d6564f;
+  border: none;
+  color: #fac5c7;
+}
+
+.info-wrapper {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info-text {
+  width: 299px;
+  text-align: justify;
+  color: #f8eded;
+}
+
+.contacts {
+  position: relative;
+  color: #f8eded;
+}
+
+.input-text {
+  margin-bottom: 17px;
+}
+
+.input-text:invalid {
+	border: 1px solid red;
+}
+
+.textarea {
+  width: 618px;
+  min-height: 203px;
+  background-color: #d6564f;
+  border: none;
+}
+
+

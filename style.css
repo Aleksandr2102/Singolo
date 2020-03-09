@@ -21,7 +21,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .logo {
-  margin-left: 37px;
+  margin-left: 38px;
   margin-top: 30px;
   font-size: 25px;
   font-family: "Lato", sans-serif;
@@ -54,15 +54,19 @@ p, h1, h2, h3, hr, figure {
 
 .navigation-list-item {
   margin-top: 38px;
-  margin-right: 29px;
-}
-
-.navigation-list-item:first-child {
+  margin-right: 12px;
   list-style: none;
 }
 
+.navigation-list-item:not(first-child)::before {
+  content: "∙";
+  display: inline-block;
+  width: 17px;
+  color: #3a3e4d;
+}
+
 .navigation-list-item:last-child { 
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .navigation-list-item a {
@@ -237,6 +241,7 @@ p, h1, h2, h3, hr, figure {
   width: 940px;
   padding-left: 39px;
   margin-bottom: 45px;
+  text-align: justify;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -245,9 +250,10 @@ p, h1, h2, h3, hr, figure {
 }
 
 .service-description-text {
-  width: 240px;
+  width: 220px;
   height: 62px;
   margin-top: 8px;
+  text-align: justify;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -263,14 +269,14 @@ p, h1, h2, h3, hr, figure {
 .service-description-icon {
   width: 59px;
   height: 59px;
-  margin-right: 19px;
+  margin-right: 21px;
   margin-top: 3px;
 }
 
 .portfolio {
   position: relative;
   background-color: #2d303a;
-  padding-bottom: 71px;
+  padding-bottom: 74px;
 }
 .about-us {
   background-color: #f2f2f2;
@@ -297,7 +303,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-title {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .portfolio-title, .about-us-title {
@@ -310,16 +316,17 @@ p, h1, h2, h3, hr, figure {
 }
 
 .about-us-title {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .about-us-text {
+  text-align: justify;
   line-height: 31px;
   word-spacing: 1.2px;
 }
 
 .portfolio-text {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .about-us-text {
@@ -335,11 +342,11 @@ p, h1, h2, h3, hr, figure {
 }
 
 .button-wrapper {
-  margin-left: 40px;
-  margin-bottom: 18px;
+  margin-left: 41px;
+  margin-bottom: 19px;
 }
 
-.button {
+.portfolio-btn {
   border: 1px solid #404454;
   border-radius: 4px;
   background-color: transparent;
@@ -348,20 +355,20 @@ p, h1, h2, h3, hr, figure {
   padding: 3px 6px;
 }
 
-.button:nth-child(3) {
+.portfolio-btn:nth-child(3) {
+  padding: 3px 6px;
+}
+
+.portfolio-btn:last-child {
   padding: 3px 5px;
 }
 
-.button:last-child {
-  padding: 3px 5px;
-}
-
-.button:hover {
+.portfolio-btn:hover {
   border-color: #606268;
   color: #808187;
 }
 
-hr, h2, figure {
+hr, h2, h4, figure {
   margin: 0;
 }
 
@@ -371,6 +378,7 @@ button {
 
 .persons {
   position: relative;
+  color: #797f97;
 }
 
 .person-data {
@@ -390,8 +398,6 @@ button {
   margin-left: 20px;
 }
 
-
-
 .person-wrapper {
   width: 300px;
   height: 445px;
@@ -399,20 +405,19 @@ button {
 } 
 
 .social-btn:first-child {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .social-btn {
   width: 31px;
   height: 31px;
   display: inline-block;
+  text-decoration: none;
   vertical-align: top;
   font-size: 0;
-  text-decoration: none;
   border: 1px solid #c3c6cf;
   border-radius: 19px;
-  background: transparent url("./assets/img/sprite.png") no-repeat center;
-  margin-right: 2px;
+  background-image: url("./assets/img/sprite.png");
 }
 
 .social-btn {
@@ -436,11 +441,11 @@ button {
 }
 
 .social-btn-tw {
-  background-position: -64px -2px;
+  background-position: -97px 0;
 }
 
 .social-btn-li {
-  background-position: -98px 0;
+  background-position: -63px -2px;
 }
 
 .social-btn:hover {
@@ -457,7 +462,7 @@ button {
   font-size: 18px;
 }
 
-.button, .about-person {
+.portfolio-btn, .about-person {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -469,9 +474,10 @@ button {
 }
 
 .about-person {
-  margin-top: 7px;
-  margin-bottom: 15px;
+  margin-top: 9px;
+  margin-bottom: 13px;
   line-height: 22px;
+  text-align: justify;
 }
 
 .person-data-line {
@@ -484,7 +490,8 @@ button {
 }
 
 .contact {
-  background-color: #f06c64;
+ position: relative;
+ background-color: #f06c64;
 }
 
 .main-footer {
@@ -497,22 +504,9 @@ button {
   justify-content: space-between;
 }
 
-.social-btn {
-  width: 31px;
-  height: 31px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 0;
-  text-decoration: none;
-  border: 1px solid #c3c6cf;
-  border-radius: 17px;
-  background: transparent url("./assets/img/sprite.png") no-repeat center;
-  margin-right: 4px;
-}
-
 .social-buttons {
-  margin-top: 22px;
-  margin-right: 35px;
+  margin-top: 12px;
+  margin-right: 40px;
 }
 
 .copyright {
@@ -522,28 +516,12 @@ button {
   font-size: 12px;
 }
 
-.social-btn-fc {
-  background-position: 2px 0;
-}
-
-.social-btn-goo {
-  background-position: -26px 0;
-}
-
-.social-btn-tw {
-  background-position: -64px -3px;
-}
-
-.social-btn-li {
-  background-position: -96px 0;
-}
-
 .input-text {
-  height: 38px;
+  height: 36px;
   width: 619px;
   background-color: #d6564f;
+  border-radius: 6px;
   border: none;
-  color: #fac5c7;
 }
 
 .client-data {
@@ -560,30 +538,147 @@ button {
 }
 
 .info-text {
-  width: 299px;
+  margin-bottom: 22px;
+  width: 302px;
   text-align: justify;
   color: #f8eded;
+  line-height: 22px;
 }
 
 .contacts {
-	position: relative;
-	color: #f8eded;
+  position: relative;
+  color: #f8eded;
+  line-height: 22px;
 }
 
 .input-text {
-  margin-bottom: 17px;
-}
-
-.input-text:invalid {
-	border: 1px solid red;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 604px;
 }
 
 .textarea {
-  width: 618px;
-  min-height: 203px;
+  width: 601px;
+  min-height: 190px;
+  padding-left: 16px;
+  padding-top: 10px;
   background-color: #d6564f;
+  border-radius: 6px;
   border: none;
 }
+
+.quote {
+  padding-top: 60px;
+  margin-bottom: 19px;
+  color: #f0d8d9;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.quote-text {
+  margin-bottom: 46px;
+  margin-right: 40px;
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f9f0f1;
+  line-height: 30px;
+}
+
+.info {
+  padding-left: 40px;
+  padding-bottom: 23px;
+}
+
+.form-line-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 1020px;
+  border: none;
+  background-color: #ea676b;
+}
+
+.contact-info-title {
+  margin-bottom: 9px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #f1dbdc;
+  margin-top: -2px;
+}
+
+.form {
+  width: 619px;
+  margin-right: 20px;
+}
+
+.location:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 13px;
+  background: url("./assets/img/location-icon.png") no-repeat;
+}
+
+.phone:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: url("./assets/img/phone-icon.png") no-repeat;
+}
+
+.email:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  background: url("./assets/img/mail-icon.png") no-repeat; 
+}
+
+.phone:hover, .email:hover {
+  color: lightslategrey;
+}
+
+.phone, .email {
+  display: block;
+  text-decoration: none;
+  color: #faf3f3;
+}
+
+.location, .phone, .email {
+  padding-left: 25px;
+}
+
+.form-button {
+  width: 89px;
+  height: 37px;
+  font-weight: bold;
+  color: #d7fcf5;
+  background-color: #2eb398;
+  border: none;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background-color: grey;
+}
+
+::-webkit-input-placeholder, ::-moz-placeholder   {
+  color: #f8b5b7;
+}
+
+
+
 
 
 

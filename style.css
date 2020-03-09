@@ -673,11 +673,29 @@ button {
   background-color: grey;
 }
 
-::-webkit-input-placeholder, ::-moz-placeholder   {
+input[type="text"]::-webkit-input-placeholder {
   color: #f8b5b7;
 }
 
+input[type="email"]::-webkit-input-placeholder {
+  color: #f8b5b7;
+}
 
+textarea[name="comment"]::-webkit-input-placeholder {
+  color: #f8b5b7;
+}
+
+input[type="text"]::-ms-input-placeholder {
+  color: #f8b5b7;
+}
+
+input[type="email"]::-ms-input-placeholder {
+  color: #f8b5b7;
+}
+
+textarea[name="comment"]::-ms-input-placeholder {
+  color: #f8b5b7;
+}
 
 
 

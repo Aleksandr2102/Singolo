@@ -6,8 +6,155 @@ body {
 }
 
 .contact {
-  background-color: #f06c64;
-  min-height: 654px;
+ position: relative;
+ background-color: #f06c64;
+}
+
+.info {
+  padding-left: 40px;
+  padding-bottom: 23px;
+}
+
+.quote {
+  padding-top: 60px;
+  margin-bottom: 19px;
+  color: #f0d8d9;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.quote-text {
+  margin-bottom: 46px;
+  margin-right: 40px;
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f9f0f1;
+  line-height: 30px;
+}
+
+.info-wrapper {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form {
+  width: 619px;
+  margin-right: 20px;
+}
+
+.input-text {
+  height: 36px;
+  width: 619px;
+  background-color: #d6564f;
+  border-radius: 6px;
+  border: none;
+}
+
+.input-text {
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 604px;
+}
+
+.textarea {
+  width: 601px;
+  min-height: 190px;
+  padding-left: 16px;
+  padding-top: 10px;
+  background-color: #d6564f;
+  border-radius: 6px;
+  border: none;
+}
+
+.form-button {
+  width: 89px;
+  height: 37px;
+  font-weight: bold;
+  color: #d7fcf5;
+  background-color: #2eb398;
+  border: none;
+  margin-top: 10px;
+}
+
+.contact-info-title {
+  margin-bottom: 9px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #f1dbdc;
+  margin-top: -2px;
+}
+
+.info-text {
+  margin-bottom: 22px;
+  width: 302px;
+  text-align: justify;
+  color: #f8eded;
+  line-height: 22px;
+}
+
+.contacts {
+  position: relative;
+  color: #f8eded;
+  line-height: 22px;
+}
+
+.location:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 13px;
+  background: url("./assets/img/location-icon.png") no-repeat;
+}
+
+.phone:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: url("./assets/img/phone-icon.png") no-repeat;
+}
+
+.email:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  background: url("./assets/img/mail-icon.png") no-repeat; 
+}
+
+.phone:hover, .email:hover {
+  color: lightslategrey;
+}
+
+.phone, .email {
+  display: block;
+  text-decoration: none;
+  color: #faf3f3;
+}
+
+.location, .phone, .email {
+  padding-left: 25px;
+}
+
+.form-line-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 1020px;
+  border: none;
+  background-color: #ea676b;
 }
 
 .main-footer {
@@ -20,24 +167,6 @@ body {
   justify-content: space-between;
 }
 
-.social-btn {
-  width: 31px;
-  height: 31px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 0;
-  text-decoration: none;
-  border: 1px solid #c3c6cf;
-  border-radius: 17px;
-  background: transparent url("./assets/img/sprite.png") no-repeat center;
-  margin-right: 4px;
-}
-
-.social-buttons {
-  margin-top: 22px;
-  margin-right: 35px;
-}
-
 .copyright {
   color: #434758;
   margin-top: 31px;
@@ -45,61 +174,56 @@ body {
   font-size: 12px;
 }
 
+.social-buttons {
+  margin-top: 12px;
+  margin-right: 40px;
+}
+
+.social-btn:first-child {
+  margin-left: 10px;
+}
+
+.social-btn {
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 0;
+  border: 1px solid #c3c6cf;
+  border-radius: 19px;
+  background-image: url("./assets/img/sprite.png");
+  margin-right: 2px;
+}
+
+.social-btn {
+  margin-right: 3px;
+}
+
+.social-btn:last-child {
+  margin-right: 0;
+}
+
 .social-btn-fc {
-  background-position: 2px 0;
+  background-position: 2px -2px;
 }
 
 .social-btn-goo {
-  background-position: -26px 0;
+  background-position: -28px -2px;
 }
 
 .social-btn-tw {
-  background-position: -64px -3px;
+  background-position: -97px 0;
 }
 
 .social-btn-li {
-  background-position: -96px 0;
+  background-position: -63px -2px;
 }
 
-.input-text {
-  height: 38px;
-  width: 619px;
-  background-color: #d6564f;
-  border: none;
-  color: #fac5c7;
+.social-btn:hover {
+  background-color: lightblue;
 }
 
-.info-wrapper {
-  display: flex;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+.social-btn {
+  margin-top: 10px;
 }
-
-.info-text {
-  width: 299px;
-  text-align: justify;
-  color: #f8eded;
-}
-
-.contacts {
-  position: relative;
-  color: #f8eded;
-}
-
-.input-text {
-  margin-bottom: 17px;
-}
-
-.input-text:invalid {
-	border: 1px solid red;
-}
-
-.textarea {
-  width: 618px;
-  min-height: 203px;
-  background-color: #d6564f;
-  border: none;
-}
-
-

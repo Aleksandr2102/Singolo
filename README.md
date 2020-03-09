@@ -1,1 +1,1 @@
- https://aleksandr2102.github.io/Singolo/
+https://aleksandr2102.github.io/Singolo/

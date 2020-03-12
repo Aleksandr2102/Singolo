@@ -307,7 +307,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-title, .about-us-title {
-  color: #666d89;
+  color:  #767e9e;
   margin-left: 40px;
   padding-top: 61px;
   font-family: "Lato", sans-serif;
@@ -326,6 +326,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-text {
+  width: 940px;
   margin-bottom: 15px;
 }
 
@@ -334,7 +335,8 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-text, .about-us-text {
-  color: #4d5266;
+  width: 940px;
+  color: #767e9e;
   margin-left: 40px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -347,10 +349,10 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-btn {
-  border: 1px solid #404454;
+  border: 1px solid #767e9e;
   border-radius: 4px;
   background-color: transparent;
-  color: #545a6f;
+  color: #767e9e;
   margin-right: 7px;
   padding: 3px 6px;
 }
@@ -364,8 +366,8 @@ p, h1, h2, h3, hr, figure {
 }
 
 .portfolio-btn:hover {
-  border-color: #606268;
-  color: #808187;
+  border-color:  #4d5266;
+  color: #ececec;
 }
 
 hr, h2, h4, figure {

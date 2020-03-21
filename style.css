@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 1020px;
   margin:  0 auto;
@@ -9,15 +13,19 @@ p, h1, h2, h3, hr, figure {
   margin: 0;
 }
 
+/*header*/
+
 .main-header {
-  position: relative;
-  height: 95px;
+  z-index: 100;
+  position: fixed;
+  height: 94px;
   background-color: #2d303a;
 }
 
 .main-header-wrapper {
   display: flex;
   justify-content: space-between;
+  height: 88px;
 }
 
 .logo {
@@ -58,11 +66,15 @@ p, h1, h2, h3, hr, figure {
   list-style: none;
 }
 
-.navigation-list-item:not(first-child)::before {
+.navigation-list-item::before {
   content: "∙";
   display: inline-block;
   width: 17px;
   color: #3a3e4d;
+}
+
+.navigation-list-item:first-child::before {
+  content: "";
 }
 
 .navigation-list-item:last-child { 
@@ -73,10 +85,9 @@ p, h1, h2, h3, hr, figure {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 12px;
-  color: #a6a8ac;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  
 }
 
 .navigation-list-item a:hover {
@@ -84,28 +95,27 @@ p, h1, h2, h3, hr, figure {
 }
 
 .main-navigation-list .active {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #ac5755;
-  text-transform: uppercase;  
+  color: #ac5755; 
 }
 
 .header-line { 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  margin-bottom: -6px;
   width: 1020px;
   height: 6px;
-  margin-top: 14px;
   border: none;
   background-color: #323746;
 }
 
+/*content slider*/
 
 .slider {
+  padding-top: 94px;
   min-height: 600px;
   background-color: #f06c64;
+}
+
+.hidden {
+  display: none;
 }
 
 .arrow {
@@ -117,7 +127,7 @@ p, h1, h2, h3, hr, figure {
 
 .left {
   position: absolute;
-  top: 284px;
+  top: 380px;
   left: 44px;
   transform: rotate(135deg);
 }
@@ -125,7 +135,7 @@ p, h1, h2, h3, hr, figure {
 .right {
   position: absolute;
   transform: rotate(-45deg);
-  top: 284px;
+  top: 380px;
   right: 44px;
 }
 
@@ -158,7 +168,7 @@ p, h1, h2, h3, hr, figure {
   background-color: #ffffff;
 }
 
-.img-wrapper {
+.img-wrapper1, .img-wrapper2 {
   position: relative;
 }
 
@@ -206,6 +216,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .services-section {
+  scroll-margin: 94px;
   position: relative;
   min-height: 440px;
   padding-top: 60px;
@@ -273,12 +284,16 @@ p, h1, h2, h3, hr, figure {
   margin-top: 3px;
 }
 
+/*portfolio*/
+
 .portfolio {
+  scroll-margin: 94px;
   position: relative;
   background-color: #2d303a;
   padding-bottom: 74px;
 }
 .about-us {
+  scroll-margin: 94px;
   background-color: #f2f2f2;
 }
 
@@ -293,6 +308,11 @@ p, h1, h2, h3, hr, figure {
   overflow: hidden;
 }
 
+.active-picture {
+  border: 5px solid #F06C64;
+  box-sizing: border-box;
+}
+
 .portfolio-line {
   position: absolute;
   bottom: 0;
@@ -304,7 +324,7 @@ p, h1, h2, h3, hr, figure {
 
 .portfolio-title {
   margin-bottom: 23px;
-}
+} 
 
 .portfolio-title, .about-us-title {
   color:  #767e9e;
@@ -344,6 +364,7 @@ p, h1, h2, h3, hr, figure {
 }
 
 .button-wrapper {
+  display: inline-block;
   margin-left: 41px;
   margin-bottom: 19px;
 }
@@ -355,6 +376,7 @@ p, h1, h2, h3, hr, figure {
   color: #767e9e;
   margin-right: 7px;
   padding: 3px 6px;
+  outline: none;
 }
 
 .portfolio-btn:nth-child(3) {
@@ -365,9 +387,14 @@ p, h1, h2, h3, hr, figure {
   padding: 3px 5px;
 }
 
+.active-btn {
+  border: 1px solid  #ececec;
+  color: #f0f0f0;
+}
+
 .portfolio-btn:hover {
-  border-color:  #4d5266;
-  color: #ececec;
+  border: 1px solid  #ececec;
+  color: #f0f0f0;
 }
 
 hr, h2, h4, figure {
@@ -492,8 +519,9 @@ button {
 }
 
 .contact {
- position: relative;
- background-color: #f06c64;
+  scroll-margin: 94px;
+  position: relative;
+  background-color: #f06c64;
 }
 
 .main-footer {

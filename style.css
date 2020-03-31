@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   width: 1020px;
   margin:  0 auto;
@@ -840,6 +844,10 @@ textarea[name="comment"]::-ms-input-placeholder {
 }
 
 @media screen and (max-width: 1019px) {
+ 
+html, body {
+  overflow-x: hidden;
+}
   
 body {
     width: 768px;
